@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepcionista Virtual - Estudio Jurídico</title>
+    <!-- Vinculación del CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="chat-container">
+        <!-- Encabezado Institucional -->
+        <header class="chat-header">
+            <div class="avatar" aria-hidden="true">Δ</div>
+            <div class="status-info">
+                <h2>Asistente Virtual</h2>
+                <p>Estudio Jurídico Asociados & Co.</p>
+            </div>
+        </header>
+
+        <!-- Contenedor de la conversación -->
+        <section class="chat-messages" id="chatMessages" aria-label="Historial de mensajes">
+            <div class="message bot">
+                Hola, bienvenido al Estudio Jurídico Asociados & Co. ¿En qué podemos ayudarle hoy?
+            </div>
+        </section>
+
+        <!-- Entrada de datos -->
+        <form class="chat-input-area" id="chatForm">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Escriba su consulta aquí..." 
+                autocomplete="off" 
+                required
+            >
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <!-- Vinculación del JS -->
+    <script src="app.js"></script>
+</body>
+</html>
