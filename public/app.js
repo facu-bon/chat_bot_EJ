@@ -4,7 +4,7 @@ const chatForm = document.getElementById('chatForm');
 const userInput = document.getElementById('userInput');
 
 // URL del backend local (reemplazar por producción en el futuro)
-const API_URL = 'http://localhost:3000/api/chat';
+const API_URL = '/api/chat';
 
 /**
  * Inserta un nuevo mensaje en la interfaz y desplaza el scroll.

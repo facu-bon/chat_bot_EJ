@@ -71,6 +71,13 @@ app.get('/status', (req, res) => {
     res.send({ status: "Servidor activo con Gemini" });
 });
 
-app.listen(PORT, () => {
-    console.log(`[SERVER] Servidor corriendo con Gemini en: http://localhost:${PORT}`);
-});
+// server.js (Modificación para producción / Serverless)
+
+// Dejá el app.listen condicional para que puedas seguir probando en local si querés
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`[SERVER] Servidor local en: http://localhost:${PORT}`);
+    });
+}
+
+export default app;
