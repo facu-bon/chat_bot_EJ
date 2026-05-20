@@ -30,6 +30,10 @@ app.get('/status', (req, res) => {
 });
 
 // --- Inicio del Servidor ---
-app.listen(PORT, () => {
-    console.log(`[SERVER] Servidor local en: http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`[SERVER] Servidor local en: http://localhost:${PORT}`);
+    });
+}
+
+export default app;
