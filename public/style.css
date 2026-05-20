@@ -131,3 +131,27 @@ body {
 .chat-input-area button:hover {
     background-color: #2c4a66;
 }
+
+/* Estilos para el indicador de carga */
+.loading-indicator {
+    border: 3px solid #f3f3f3; /* Light grey */
+    border-top: 3px solid #1a2e40; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+    align-self: center;
+    display: none; /* Oculto por defecto */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ajuste para el botón cuando el input está deshabilitado */
+.chat-input-area button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+}
