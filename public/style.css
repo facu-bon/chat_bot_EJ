@@ -1,4 +1,3 @@
-/* Reseteo general y tipografía */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,6 @@ body {
     height: 100vh;
 }
 
-/* Contenedor principal */
 .chat-container {
     width: 100%;
     max-width: 450px;
@@ -27,9 +25,8 @@ body {
     overflow: hidden;
 }
 
-/* Encabezado ejecutivo */
 .chat-header {
-    background-color: #1a2e40; /* Azul institucional */
+    background-color: #1a2e40;
     color: #ffffff;
     padding: 15px 20px;
     display: flex;
@@ -40,7 +37,7 @@ body {
 .chat-header .avatar {
     width: 40px;
     height: 40px;
-    background-color: #d4af37; /* Dorado sutil */
+    background-color: #d4af37;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -59,7 +56,6 @@ body {
     color: #a0aec0;
 }
 
-/* Historial de chat */
 .chat-messages {
     flex: 1;
     padding: 20px;
@@ -70,7 +66,6 @@ body {
     gap: 12px;
 }
 
-/* Burbujas de diálogo */
 .message {
     max-width: 80%;
     padding: 12px 16px;
@@ -94,7 +89,6 @@ body {
     border-top-right-radius: 0;
 }
 
-/* Barra de control inferior */
 .chat-input-area {
     padding: 15px;
     background-color: #ffffff;
@@ -132,17 +126,16 @@ body {
     background-color: #2c4a66;
 }
 
-/* Estilos para el indicador de carga */
 .loading-indicator {
-    border: 3px solid #f3f3f3; /* Light grey */
-    border-top: 3px solid #1a2e40; /* Blue */
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #1a2e40;
     border-radius: 50%;
     width: 20px;
     height: 20px;
     animation: spin 1s linear infinite;
     margin-left: 10px;
     align-self: center;
-    display: none; /* Oculto por defecto */
+    display: none;
 }
 
 @keyframes spin {
@@ -150,7 +143,6 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* Ajuste para el botón cuando el input está deshabilitado */
 .chat-input-area button:disabled {
     background-color: #a0aec0;
     cursor: not-allowed;
